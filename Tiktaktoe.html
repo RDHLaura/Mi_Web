@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laura Rodríguez de Haro</title>
+    <link rel="stylesheet" href="style.css">
+    <!--FONTAWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="index.html" class="logo nav-link">Logo </a>
+            <button class="nav-toggle" aria-label="Abrir menú"><i class="fa-solid fa-bars"></i></button>
+            <ul class="nav-menu">
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Blog</a></li>
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Proyectos</a></li>
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Sobre mí</a></li>
+                <li class="nav-menu-item"><a href="#" class="nav-menu-link nav-link">Contacto</a></li>
+            </ul>
+        </nav>    
+    </header>
+    <main>
+        <section class="container">
+            <h1>Tik-Tak-Toe</h1>   
+            <div class="central">    
+                <h2>Algoritmo A*</h2>  
+                <a class="enlace-tiktaktoe" href="https://github.com/RDHLaura/Tik-Tak-Toe.git" alt="Repositorio GitHub Tik-Tak-Toe">Repositorio GitHub Tik-Tak-Toe</a>  
+           
+                <p>Este algoritmo consiste en adjudicarle un número de 0, 1 o -1 (vacía, máquina y jugador respectivamente) a cada casilla de una matriz de 3x3.
+
+                    <br>Calculando de esta forma el movimiento más optimo y asignárselo a la jugada de la máquina.
+                    <br>
+                    <br>Para ello lo que haremos es calcular el valor de las casillas vacías de la matriz, y almacenarlas en un diccionario de jugadas posibles y de ahí elegiremos según un orden de prioridades. 
+                    <br>
+                    <br>En mi caso establecí que la prioridad sean las casillas que tengan valor 2 o -2 que sería jugada ganadora para la máquina o evitar la jugada ganadora para el jugador, y en caso de que no haya ninguna con estos valores se elige la jugada positiva más alta, que corresponde a una jugada optima para la máquina.
+                
+               
+                <br><br>Interfaz con Curses.
+                <br>Desarrollado en equipo con <a href="https://github.com/CarlaCGDM"> CarlaCGDM</a></p>              
+            </div>
+            <hr>
+            <img class="tiktaktoe-img" src="/img/ezgif.com-gif-maker (2).gif" alt="Tik-Tak-Toe">
+
+
+           
+        </section>
+    </main> 
+    <footer></footer>  
+</body>
+</html>
