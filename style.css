@@ -144,12 +144,10 @@ hr{
     padding: 10px 0;
     font-size: 12px; 
     font-weight: bold;    
-    color: #66fcf1;
-    color:#be99fa;
-    
+    color:#be99fa;    
     text-transform: uppercase;
 }
-.previews a:hover{ /*hover cambia la acción cuando se pasa el ratón por encima*/
+.container a:hover{ /*hover cambia la acción cuando se pasa el ratón por encima*/
     text-decoration: underline;
 }
 
@@ -356,7 +354,7 @@ hr{
 
 .enlace-tiktaktoe{
    text-align: center;
-    
+   text-decoration: underline;
 }
 
 
